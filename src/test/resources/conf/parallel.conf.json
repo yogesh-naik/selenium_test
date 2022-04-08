@@ -31,6 +31,12 @@
 			"browser_version": "100.0",
 			"os": "Windows",
 			"os_version": "11"
+		},
+		"env5": {
+			"browser": "opera",
+			"browser_version": "12.16",
+			"os": "Windows",
+			"os_version": "8.1"
 		}
 	}
 }

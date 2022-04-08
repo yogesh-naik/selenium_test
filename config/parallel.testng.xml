@@ -32,5 +32,13 @@
 			<class name="com.browserstack.SingleTest" />
 		</classes>
 	</test>
+	
+	<test name="SingleTestEnv5">
+		<parameter name="config" value="parallel.conf.json" />
+		<parameter name="environment" value="env5" />
+		<classes>
+			<class name="com.browserstack.SingleTest" />
+		</classes>
+	</test>
 
 </suite>

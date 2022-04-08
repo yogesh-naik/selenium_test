@@ -16,6 +16,16 @@ public class SingleTest extends BrowserStackTestNGTest {
         element.submit();
         Thread.sleep(5000);
 
+        //Assertion 1
         Assert.assertTrue(driver.getTitle().matches("(?i)Priyanka Chopra - Google Search"));
+        
+        //Assertion 2
+        WebElement btnSongs = driver.findElement(By.xpath("//span[text()='Songs']"));
+        Assert.assertEquals(true, btnSongs.isDisplayed());
+        
+        //Assertion 3
+        WebElement txtActress = driver.findElement(By.xpath("//div[text()='Indian actress']"));
+        Assert.assertEquals(true, txtActress.isEnabled());
+        
     }
 }
