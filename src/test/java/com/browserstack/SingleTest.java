@@ -20,8 +20,8 @@ public class SingleTest extends BrowserStackTestNGTest {
         Assert.assertTrue(driver.getTitle().matches("(?i)Priyanka Chopra - Google Search"));
         
         //Assertion 2
-        WebElement btnSongs = driver.findElement(By.xpath("//a[text()='Nick Jonas']"));
-        Assert.assertEquals(true, btnSongs.isDisplayed());
+        WebElement btnSongs = driver.findElement(By.linkText("Nick Jonas"));
+        Assert.assertEquals(true, btnSongs.isEnabled());
         
         //Assertion 3
         WebElement txtActress = driver.findElement(By.xpath("//div[text()='Indian actress']"));
